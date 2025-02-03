@@ -1,7 +1,7 @@
-// Importation de Mongoose
+
 const mongoose = require('mongoose');
 
-// Définition du schéma de l'utilisateur
+
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -18,5 +18,5 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-// Exportation du modèle User
+
 module.exports = mongoose.model('User', UserSchema);
